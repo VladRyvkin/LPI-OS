@@ -1,6 +1,11 @@
 #!/bin/bash
 
 sleep 1s
+echo start update.sh
+chmod +x update.sh
+sh update.sh
+
+sleep 1s
 echo start terminst.sh
 chmod +x terminst.sh
 sh terminst.sh
@@ -29,8 +34,3 @@ sleep 1s
 echo start andinst.sh
 chmod +x andinst.sh
 sh andinst.sh
-
-sleep 1s
-echo start update.sh
-chmod +x update.sh
-sh update.sh
