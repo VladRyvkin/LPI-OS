@@ -6,7 +6,10 @@ sleep 1s;
 echo "file: andinst.sh"
 echo ""
 sleep 1s;
-echo "In this file we have IDE Android Studio and Atom"
+echo "In this file we have IDE:"
+sleep 1s;
+echo ""
+echo "Atom, Eclipse, Android Studio"
 sleep 1s;
 echo ""
 sleep 1s;
@@ -23,6 +26,19 @@ while true; do
 					zypper install atom.x86_64.rpm;
 					rm  *.rpm;
 					sleep 1s; echo ""; echo "Installing Atom complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
+		while true; do
+	   	 	read -p "Do you wish to install Android Studio?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing Android Studio";
+					wget http://mirror.tspu.ru/eclipse/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz;
+					tar -xf *.tar;
+					ch /home/vlad/Downloads/eclipse-installer/eclipse-inst;
+					rm *.tar;
+					sleep 1s; echo ""; echo "Installing Android Studio complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
