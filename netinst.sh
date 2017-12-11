@@ -77,7 +77,7 @@ while true; do
 	   	 	read -p "Do you wish to install Adobe Flash Player?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing Adobe Flash Player...";
-					zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/;
+					zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ adobe;
 					sudo zypper se -s -r adobe;
 					zypper in adobe-release-x86_64;
 					rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux;
