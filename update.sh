@@ -15,7 +15,7 @@ while true; do
 		zypper refresh;
 		zypper update;
 		sleep 1s; echo ""; echo "Installing updates complete"; sleep 1s; echo ""; echo "Rebooting system"; echo ""; sleep 1s; reboot; break;;
-        [Nn]* ) sleep 1s; echo ""; echo "Close andinst.sh"; sleep 1s; echo ""; exit;;
+        [Nn]* ) sleep 1s; echo ""; echo "Close update.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
