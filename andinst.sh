@@ -31,14 +31,14 @@ while true; do
 			 	esac
 			done
 		while true; do
-	   	 	read -p "Do you wish to install Android Studio?" yn
+	   	 	read -p "Do you wish to install Eclipse?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing Android Studio";
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing eclipse";
 					wget http://mirror.tspu.ru/eclipse/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz;
 					tar -xf *.tar;
 					ch /home/vlad/Downloads/eclipse-installer/eclipse-inst;
 					rm *.tar;
-					sleep 1s; echo ""; echo "Installing Android Studio complete"; echo ""; break;;
+					sleep 1s; echo ""; echo "Installing eclipse complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
