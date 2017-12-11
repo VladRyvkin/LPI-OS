@@ -16,10 +16,7 @@ while true; do
     case $yn in
         [Yy]* ) sleep 1s; echo ""; echo "Starting theminst.sh";
 		sleep 1s; echo ""; echo "Copying themes";
-		unzip -t *.zip
-		unzip themes.zip -d /usr/share/themes/;
-		unzip icons.zip -d /usr/share/icons/;
-		rm *.zip;
+		zypper cinnamon-metatheme-numix;
 		sleep 1s; echo ""; echo "Copying themes complete"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close theminst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
