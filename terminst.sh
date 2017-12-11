@@ -11,7 +11,7 @@ echo "and Virtualbox"
 sleep 1s;
 echo ""
 echo "mc, lynx, elinks, moc, htop, gcc, make, wine"
-echo "memtest86, nano, p7zip, virtualbox"
+echo "memtest86, nano, p7zip, virtualbox, teamviewer"
 echo ""
 sleep 1s;
 
@@ -145,6 +145,19 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
+		while true; do
+	   	 	read -p "Do you wish to install teamviewer?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing teamviewer...";
+					wget https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.5693.x86_64.rpm;
+					zypper in *.rpm;
+					rm  *.rpm;
+					sleep 1s; echo ""; echo "Installing teamviewer complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
+		
 
 		sleep 1s; echo ""; echo "Close terminst.sh"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close terminst.sh"; sleep 1s; echo ""; exit;;
