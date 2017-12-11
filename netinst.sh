@@ -10,7 +10,7 @@ echo "In this file we have program for work in internet"
 sleep 1s;
 echo ""
 echo "google-chrome-stable, google-earth-pro-stable"
-echo "skypeforlinux-64, viber"
+echo "skypeforlinux-64, viber, Adobe Flash Player"
 echo ""
 sleep 1s;
 
@@ -73,7 +73,21 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
-		
+		while true; do
+	   	 	read -p "Do you wish to install Adobe Flash Player?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing Adobe Flash Player...";
+					zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/;
+					sudo zypper se -s -r adobe;
+					zypper in adobe-release-x86_64;
+					rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux;
+					zypper in flash-plugin
+					sleep 1s; echo ""; echo "Installing Adobe Flash Player complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
+
 		sleep 1s; echo ""; echo "Close netinst.sh"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close netinst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
