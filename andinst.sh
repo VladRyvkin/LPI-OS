@@ -57,7 +57,7 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
-		sleep 1s; echo ""; echo "Close gameinst.sh"; echo ""; break;;
+		sleep 1s; echo ""; echo "Close andinst.sh"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close andinst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
