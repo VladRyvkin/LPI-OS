@@ -27,6 +27,7 @@ while true; do
 		unzip icons4.zip -d /usr/share/icons/;
 		unzip icons5.zip -d /usr/share/icons/;
 		unzip wallpapers.zip -d /usr/share/wallpapers/xfce/;
+		rm *.zip;
 		sleep 1s; echo ""; echo "Copying themes complete"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close theminst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
