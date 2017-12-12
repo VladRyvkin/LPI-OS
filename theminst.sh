@@ -19,6 +19,14 @@ while true; do
 		zypper install cinnamon-metatheme-numix;
 		zypper install ubuntu-mate-icon-theme;
 		zypper install icewm-themes;
+		unzip -t *.zip;
+		unzip themes.zip -d /usr/share/themes/;
+		unzip icons1.zip -d /usr/share/icons/;
+		unzip icons2.zip -d /usr/share/icons/;
+		unzip icons3.zip -d /usr/share/icons/;
+		unzip icons4.zip -d /usr/share/icons/;
+		unzip icons5.zip -d /usr/share/icons/;
+		unzip wallpapers.zip -d /usr/share/wallpapers/xfce/;
 		sleep 1s; echo ""; echo "Copying themes complete"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close theminst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
