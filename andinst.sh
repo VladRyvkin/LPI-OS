@@ -36,8 +36,11 @@ while true; do
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing eclipse";
 					wget http://mirror.tspu.ru/eclipse/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz;
 					tar -xf eclipse-inst-linux64.tar.gz;
-					ch /$PWD/eclipse-installer/eclipse-inst;
+					cd /$PWD/eclipse-installer/
+					./eclipse-inst;
+					cd $OLDPWD;
 					rm eclipse-inst-linux64.tar.gz;
+					rm -rf /$OLDPWD/eclipse-installer;
 					sleep 1s; echo ""; echo "Installing eclipse complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
