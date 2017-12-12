@@ -36,7 +36,7 @@ while true; do
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing eclipse";
 					wget http://mirror.tspu.ru/eclipse/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz;
 					tar -xf *.tar;
-					ch /home/vlad/Downloads/eclipse-installer/eclipse-inst;
+					ch /$PWD/eclipse-installer/eclipse-inst;
 					rm *.tar;
 					sleep 1s; echo ""; echo "Installing eclipse complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
