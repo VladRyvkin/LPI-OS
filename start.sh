@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "start from user: $USER"
+sleep 1s
+echo ""
+echo "working directory : $PWD"
+sleep 1s
 echo ""
 sleep 1s
 echo "Welcome to the LPI-OS"
