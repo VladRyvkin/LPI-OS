@@ -19,7 +19,6 @@ while true; do
         [Nn]* ) sleep 1s; echo ""; echo "Exit..."; echo ""; sleep 1s; echo "Install complete"; echo "";
         echo "https://software.opensuse.org/package/lightdm-gtk-greeter-settings  - login theme settings"; echo "";
         echo "https://software.opensuse.org/package/mugshot?search_term=mugshot - login theme settings"; echo "";
-        echo "https://software.opensuse.org/download.html?project=X11%3Axfce&package=xfce4-panel-plugin-weather"; echo "";
         sleep 1s; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
