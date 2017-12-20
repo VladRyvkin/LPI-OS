@@ -21,9 +21,13 @@ while true; do
 		zypper install icewm-themes;
 		zypper install xfce4-panel-plugin-eyes;
 		zypper install xfce4-panel-plugin-cpufreq;
-		xfce4-panel-plugin-netload;
-		xfce4-panel-plugin-fsguard;
-		xfce4-panel-plugin-wavelan;
+		zypper install xfce4-panel-plugin-netload;
+		zypper install xfce4-panel-plugin-fsguard;
+		zypper install xfce4-panel-plugin-wavelan;
+		zypper install xfce4-panel-plugin-cpugraph;
+		zypper install xfce4-panel-plugin-systemload;
+		#xfce4-panel-plugin-whiskermenu;
+		#xfce4-panel-plugin-weather;
 		unzip -t *.zip;
 		unzip themes.zip -d /usr/share/themes/;
 		unzip icons1.zip -d /usr/share/icons/;
