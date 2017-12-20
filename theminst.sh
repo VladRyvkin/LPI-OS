@@ -19,6 +19,7 @@ while true; do
 		zypper install cinnamon-metatheme-numix;
 		zypper install ubuntu-mate-icon-theme;
 		zypper install icewm-themes;
+		zypper install xfce4-panel-plugin-eyes;
 		unzip -t *.zip;
 		unzip themes.zip -d /usr/share/themes/;
 		unzip icons1.zip -d /usr/share/icons/;
