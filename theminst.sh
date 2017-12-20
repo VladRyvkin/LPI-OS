@@ -20,6 +20,10 @@ while true; do
 		zypper install ubuntu-mate-icon-theme;
 		zypper install icewm-themes;
 		zypper install xfce4-panel-plugin-eyes;
+		zypper install xfce4-panel-plugin-cpufreq;
+		xfce4-panel-plugin-netload;
+		xfce4-panel-plugin-fsguard;
+		xfce4-panel-plugin-wavelan;
 		unzip -t *.zip;
 		unzip themes.zip -d /usr/share/themes/;
 		unzip icons1.zip -d /usr/share/icons/;
