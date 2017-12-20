@@ -27,6 +27,7 @@ while true; do
 		zypper install xfce4-panel-plugin-cpugraph;
 		zypper install xfce4-panel-plugin-systemload;
 		zypper install xfce4-panel-plugin-diskperf;
+		zypper install xfce4-panel-plugin-sensors;
 		#xfce4-panel-plugin-whiskermenu;
 		#xfce4-panel-plugin-weather;
 		unzip -t *.zip;
