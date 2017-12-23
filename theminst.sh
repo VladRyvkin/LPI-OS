@@ -29,6 +29,7 @@ while true; do
 		zypper install xfce4-panel-plugin-diskperf;
 		zypper install xfce4-panel-plugin-sensors;
 		zypper install xfce4-panel-plugin-weather;
+		zypper install xfce4-panel-plugin-whiskermenu;
 		unzip -t *.zip;
 		unzip themes.zip -d /usr/share/themes/;
 		unzip icons1.zip -d /usr/share/icons/;
