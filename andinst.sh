@@ -6,7 +6,10 @@ sleep 1s;
 echo "file: andinst.sh"
 echo ""
 sleep 1s;
-echo "In this file we have IDE Android Studio and Atom"
+echo "In this file we have IDE:"
+sleep 1s;
+echo ""
+echo "Atom, Eclipse, Android Studio"
 sleep 1s;
 echo ""
 sleep 1s;
@@ -28,6 +31,22 @@ while true; do
 			 	esac
 			done
 		while true; do
+	   	 	read -p "Do you wish to install Eclipse?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing eclipse";
+					wget http://mirror.tspu.ru/eclipse/oomph/epp/oxygen/R/eclipse-inst-linux64.tar.gz;
+					tar -xf eclipse-inst-linux64.tar.gz;
+					cd /$PWD/eclipse-installer/
+					./eclipse-inst;
+					cd $OLDPWD;
+					rm eclipse-inst-linux64.tar.gz;
+					rm -rf /$OLDPWD/eclipse-installer;
+					sleep 1s; echo ""; echo "Installing eclipse complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
+		while true; do
 	   	 	read -p "Do you wish to install Android Studio?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing Android Studio";
@@ -41,7 +60,7 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
-		sleep 1s; echo ""; echo "Close gameinst.sh"; echo ""; break;;
+		sleep 1s; echo ""; echo "Close andinst.sh"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close andinst.sh"; sleep 1s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
