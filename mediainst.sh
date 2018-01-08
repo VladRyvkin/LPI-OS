@@ -41,6 +41,26 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
+		while true; do
+	   	 	read -p "Do you wish to install musescore?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing musescore...";
+					zypper install audacious;
+					sleep 1s; echo ""; echo "Installing musescore complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
+		while true; do
+	   	 	read -p "Do you wish to install musescore?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing musescore...";
+					zypper install audacity;
+					sleep 1s; echo ""; echo "Installing musescore complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
 		
 		sleep 1s; echo ""; echo "Close mediainst.sh"; echo ""; break;;
         [Nn]* ) sleep 1s; echo ""; echo "Close mediainst.sh"; sleep 1s; echo ""; exit;;
