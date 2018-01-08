@@ -37,7 +37,6 @@ while true; do
 		cp -rp /$PWD/backgrounds/* /usr/share/wallpapers/xfce/
 		
 		cd icons;
-		echo $PWD;
 		unzip Adwaita.zip -d /usr/share/icons/;
 		unzip Breeze.zip -d /usr/share/icons/;
 		unzip bridge.zip -d /usr/share/icons/;
