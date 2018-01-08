@@ -161,7 +161,7 @@ while true; do
 	   	 	read -p "Do you wish to install gnome-system-monitor?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing gnome-system-monitor...";
-					zypper install zypper install gnome-system-monitor;
+					zypper install gnome-system-monitor;
 					sleep 1s; echo ""; echo "Installing gnome-system-monitor complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
