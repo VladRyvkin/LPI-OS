@@ -34,10 +34,10 @@ while true; do
 
 		a=$PWD;
 		cd $PWD/ThemesRes-LPI-master;
-		#cp -rp /$PWD/backgrounds/* /usr/share/wallpapers/xfce/
+		cp -rp /$PWD/backgrounds/* /usr/share/wallpapers/xfce/
 		
-		cd icons
-		echo $PWD
+		cd icons;
+		echo $PWD;
 		unzip Adwaita.zip -d /usr/share/icons/;
 		unzip Breeze.zip -d /usr/share/icons/;
 		unzip bridge.zip -d /usr/share/icons/;
@@ -69,6 +69,7 @@ while true; do
 		cd $OLDPWD
 
 		cd themes
+		sleep 5s;
 		unzip Adwaita.zip -d /usr/share/themes/;
 		unzip axiom.zip -d /usr/share/themes/;
 		unzip Breath.zip -d /usr/share/themes/;
