@@ -33,6 +33,16 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
+		while true; do
+	   	 	read -p "Do you wish to install opera?" yn
+	   	 	case $yn in
+       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing google-chrome-stable...";
+					zypper install opera;
+					sleep 1s; echo ""; echo "Installing google-chrome-stable complete"; echo ""; break;;
+				[Nn]* ) sleep 1s; echo ""; break;;
+				* ) echo "Please answer yes or no.(y or n)";;
+			 	esac
+			done
 		  
 		sleep 1s;
 		while true; do
