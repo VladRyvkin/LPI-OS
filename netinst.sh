@@ -49,9 +49,9 @@ while true; do
 	   	 	read -p "Do you wish to install google-earth-pro-stable?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 1s; echo ""; echo "Installing google-earth-pro-stable...";
-					wget https://dl.google.com/dl/earth/client/current/google-earth-pro-stable-current.x86_64.rpm;
-					zypper in *.rpm;
-					rm  *.rpm;
+					zypper ar http://dl.google.com/linux/earth/rpm/stable/x86_64 Google-Earth;
+					zypper ref;
+					zypper in google-earth-pro-stable;
 					sleep 1s; echo ""; echo "Installing google-earth-pro-stable complete"; echo ""; break;;
 				[Nn]* ) sleep 1s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
