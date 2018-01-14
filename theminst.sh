@@ -18,6 +18,7 @@ while true; do
 		sleep 1s; echo ""; echo "Copying themes";
 		zypper install cinnamon-metatheme-numix;
 		zypper install xfce4-panel-plugin-eyes;
+		zypper install xfce4-panel-plugin-battery;  
 		zypper install xfce4-panel-plugin-cpufreq;
 		zypper install xfce4-panel-plugin-netload;
 		zypper install xfce4-panel-plugin-fsguard;
@@ -34,10 +35,10 @@ while true; do
 
 		a=$PWD;
 		cd $PWD/ThemesRes-LPI-master;
-		cp -rp /$PWD/backgrounds/* /usr/share/wallpapers/xfce/
+		cp -rp /$PWD//ThemesRes-LPI-master/backgrounds/* /usr/share/wallpapers/xfce/
 		
-		cd icons;
-		echo $PWD;
+		cd $PWD/ThemesRes-LPI-master/icons;
+
 		unzip Adwaita.zip -d /usr/share/icons/;
 		unzip Breeze.zip -d /usr/share/icons/;
 		unzip bridge.zip -d /usr/share/icons/;
@@ -66,10 +67,9 @@ while true; do
 		cp cab_view.png /usr/share/icons/;
 		cp whiskermenu-manjaro.svg /usr/share/icons/;
 
-		cd $OLDPWD
+		cd $OLDPWD;
+		cd $PWD/ThemesRes-LPI-master/themes;
 
-		cd themes
-		sleep 5s;
 		unzip Adwaita.zip -d /usr/share/themes/;
 		unzip axiom.zip -d /usr/share/themes/;
 		unzip Breath.zip -d /usr/share/themes/;
@@ -80,7 +80,7 @@ while true; do
 		unzip RedmondXP.zip -d /usr/share/themes/;
 		unzip Vertex-Maia.zip -d /usr/share/themes/;
 
-		cd $a;
+		cd $OLDPWD
 		rm master;
 		rm -rf ThemesRes-LPI-master;
 		
