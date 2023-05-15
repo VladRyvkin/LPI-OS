@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Operating System: $(lsb_release -s -d)"
+sleep 1s
 echo "start from user: $USER"
 sleep 1s
 echo ""
