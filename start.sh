@@ -10,7 +10,7 @@ sleep 1s
 echo ""
 sleep 1s
 echo "Welcome to the LPI-OS"
-echo "linux post installer for opensuse"
+echo "linux post installer for $(lsb_release -s -d)"
 echo ""
 sleep 1s
 
