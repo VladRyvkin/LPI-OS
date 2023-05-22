@@ -1,24 +1,24 @@
 #!/bin/bash
 
-sleep 1s;
+sleep 0.3s;
 echo ""
-sleep 1s;
+sleep 0.3s;
 echo "file: update.sh"
 echo ""
-sleep 1s;
+sleep 0.3s;
 
 while true; do
     read -p "Do you wish to update system?" yn
     case $yn in
-        [Yy]* ) sleep 1s; echo ""; echo "Starting update.sh";
-		sleep 1s; echo ""; echo "Installing updates";
-		zypper refresh;
-		zypper update;
-		sleep 1s; echo ""; echo "Installing updates complete"; sleep 1s; echo ""; echo "Rebooting system"; echo ""; sleep 1s; reboot; break;;
-        [Nn]* ) sleep 1s; echo ""; echo "Close update.sh"; sleep 1s; echo ""; exit;;
+        [Yy]* ) sleep 0.3s; echo ""; echo "Starting update.sh";
+		sleep 0.3s; echo ""; echo "Installing updates";
+		sudo sudo zypper refresh;
+		sudo sudo zypper update;
+		sleep 0.3s; echo ""; echo "Installing updates complete"; sleep 0.3s; echo ""; break;;
+        [Nn]* ) sleep 0.3s; echo ""; echo "Close update.sh"; sleep 0.3s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
 
-#zypper up  
+#sudo zypper up  
 #reboot

@@ -1,49 +1,49 @@
 #!/bin/bash
 
-sleep 1s;
+sleep 0.3s;
 echo ""
-sleep 1s;
+sleep 0.3s;
 echo "file: gameinst.sh"
 echo ""
-sleep 1s;
+sleep 0.3s;
 echo "In this file we have program for games"
-sleep 1s;
+sleep 0.3s;
 echo ""
 echo "PlayOnLinux, steam"
 echo ""
-sleep 1s;
+sleep 0.3s;
 
 while true; do
     read -p "Do you wish to install this programs?" yn
     case $yn in
-        [Yy]* ) sleep 1s; echo ""; echo "Starting gameinst.sh"; sleep 1s; echo "";   
+        [Yy]* ) sleep 0.3s; echo ""; echo "Starting gameinst.sh"; sleep 0.3s; echo "";   
 		 while true; do
 	   	 	read -p "Do you wish to install PlayOnLinux?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing PlayOnLinux...";
-					zypper install PlayOnLinux
-					sleep 1s; echo ""; echo "Installing PlayOnLinux complete"; echo ""; break;;
-				[Nn]* ) sleep 1s; echo ""; break;;
+       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing PlayOnLinux...";
+					sudo zypper install PlayOnLinux
+					sleep 0.3s; echo ""; echo "Installing PlayOnLinux complete"; echo ""; break;;
+				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
 		  
-		sleep 1s;
+		sleep 0.3s;
 		while true; do
 	   	 	read -p "Do you wish to install steam?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 1s; echo ""; echo "Installing steam...";
-					zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo;
-					zypper refresh;
-					zypper install steam;
-					sleep 1s; echo ""; echo "Installing steam complete"; echo ""; break;;
-				[Nn]* ) sleep 1s; echo ""; break;;
+       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing steam...";
+					sudo zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo;
+					sudo zypper refresh;
+					sudo zypper install steam;
+					sleep 0.3s; echo ""; echo "Installing steam complete"; echo ""; break;;
+				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
 		
-		sleep 1s; echo ""; echo "Close gameinst.sh"; echo ""; break;;
-        [Nn]* ) sleep 1s; echo ""; echo "Close gameinst.sh"; sleep 1s; echo ""; exit;;
+		sleep 0.3s; echo ""; echo "Close gameinst.sh"; echo ""; break;;
+        [Nn]* ) sleep 0.3s; echo ""; echo "Close gameinst.sh"; sleep 0.3s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
@@ -51,8 +51,8 @@ done
 
 
 
-#zypper install PlayOnLinux
+#sudo zypper install PlayOnLinux
 
-#zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo
-#zypper refresh
-#zypper install steam
+#sudo zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo
+#sudo zypper refresh
+#sudo zypper install steam
