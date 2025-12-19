@@ -44,9 +44,9 @@ while true; do
 		while true; do
 	   	 	read -p "Do you wish to install musescore?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing musescore...";
+       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing audacious...";
 					sudo zypper install audacious;
-					sleep 0.3s; echo ""; echo "Installing musescore complete"; echo ""; break;;
+					sleep 0.3s; echo ""; echo "Installing audacious complete"; echo ""; break;;
 				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
@@ -54,9 +54,9 @@ while true; do
 		while true; do
 	   	 	read -p "Do you wish to install musescore?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing musescore...";
+       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing audacity...";
 					sudo zypper install audacity;
-					sleep 0.3s; echo ""; echo "Installing musescore complete"; echo ""; break;;
+					sleep 0.3s; echo ""; echo "Installing audacity complete"; echo ""; break;;
 				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac

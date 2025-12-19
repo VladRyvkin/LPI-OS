@@ -26,11 +26,6 @@ chmod +x mediainst.sh
 sh mediainst.sh
 
 sleep 0.3s
-echo start theminst.sh
-chmod +x theminst.sh
-sh theminst.sh
-
-sleep 0.3s
-echo start andinst.sh
-chmod +x andinst.sh
-sh andinst.sh
+echo start devinst.sh
+chmod +x devinst.sh
+sh devinst.sh
