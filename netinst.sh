@@ -83,21 +83,7 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
-		while true; do
-	   	 	read -p "Do you wish to install Adobe Flash Player?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing Adobe Flash Player...";
-					sudo zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ adobe;
-					sudo sudo zypper se -s -r adobe;
-					sudo zypper in adobe-release-x86_64;
-					rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux;
-					sudo zypper in flash-plugin
-					sleep 0.3s; echo ""; echo "Installing Adobe Flash Player complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
-
+		
 		sleep 0.3s; echo ""; echo "Close netinst.sh"; echo ""; break;;
         [Nn]* ) sleep 0.3s; echo ""; echo "Close netinst.sh"; sleep 0.3s; echo ""; exit;;
         * ) echo "Please answer yes or no.(y or n)";;
