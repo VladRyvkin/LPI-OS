@@ -45,31 +45,7 @@ while true; do
 			done
 		  
 		sleep 0.3s;
-		while true; do
-	   	 	read -p "Do you wish to install google-earth-pro-stable?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing google-earth-pro-stable...";
-					sudo zypper ar http://dl.google.com/linux/earth/rpm/stable/x86_64 Google-Earth;
-					sudo zypper ref;
-					sudo zypper in google-earth-pro-stable;
-					sleep 0.3s; echo ""; echo "Installing google-earth-pro-stable complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
-		sleep 0.3s;
-		while true; do
-	   	 	read -p "Do you wish to install skypeforlinux-64?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing skypeforlinux-64...";
-					wget https://repo.skype.com/latest/skypeforlinux-64.rpm;
-					sudo zypper in *.rpm;
-					rm  *.rpm;
-					sleep 0.3s; echo ""; echo "Installing skypeforlinux-64 complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+		
 		sleep 0.3s;
 		while true; do
 	   	 	read -p "Do you wish to install viber?" yn
