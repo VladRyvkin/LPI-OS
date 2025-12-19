@@ -31,16 +31,16 @@ while true; do
 			done
 		  
 		sleep 0.3s;
-		while true; do
-	   	 	read -p "Do you wish to install lynx?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing lynx...";
-					sudo zypper install lynx;
-					sleep 0.3s; echo ""; echo "Installing lynx complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+		#while true; do
+	   	 	#read -p "Do you wish to install lynx?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing lynx...";
+					#sudo zypper install lynx;
+					#sleep 0.3s; echo ""; echo "Installing lynx complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
 		sleep 0.3s;
 		while true; do
 	   	 	read -p "Do you wish to install elinks?" yn
@@ -75,26 +75,26 @@ while true; do
 			 	esac
 			done
 		sleep 0.3s;
-		while true; do
-	   	 	read -p "Do you wish to install gcc?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing gcc...";
-					sudo zypper install gcc;
-					sleep 0.3s; echo ""; echo "Installing gcc complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
-		while true; do
-	   	 	read -p "Do you wish to install make?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing make...";
-					sudo zypper install make;
-					sleep 0.3s; echo ""; echo "Installing make complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+		#while true; do
+	   	 	#read -p "Do you wish to install gcc?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing gcc...";
+					#sudo zypper install gcc;
+					#sleep 0.3s; echo ""; echo "Installing gcc complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
+		#while true; do
+	   	 	#read -p "Do you wish to install make?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing make...";
+					#sudo zypper install make;
+					#sleep 0.3s; echo ""; echo "Installing make complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
 		while true; do
 	   	 	read -p "Do you wish to install wine?" yn
 	   	 	case $yn in

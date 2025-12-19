@@ -9,7 +9,7 @@ sleep 0.3s;
 echo "In this file we have program for multimedia"
 sleep 0.3s;
 echo ""
-echo "vlc, musescore"
+echo "vlc, musescore, audacious, audacity"
 echo ""
 sleep 0.3s;
 
@@ -42,7 +42,7 @@ while true; do
 			 	esac
 			done
 		while true; do
-	   	 	read -p "Do you wish to install musescore?" yn
+	   	 	read -p "Do you wish to install audacious?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing audacious...";
 					sudo zypper install audacious;
@@ -52,7 +52,7 @@ while true; do
 			 	esac
 			done
 		while true; do
-	   	 	read -p "Do you wish to install musescore?" yn
+	   	 	read -p "Do you wish to install audacity?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing audacity...";
 					sudo zypper install audacity;

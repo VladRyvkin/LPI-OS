@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "Operating System: $(lsb_release -s -d)"
+#echo "Operating System: $(lsb_release -s -d)"
 sleep 0.3s
 echo "start from user: $USER"
 sleep 0.3s
@@ -11,7 +11,7 @@ sleep 0.3s
 echo ""
 sleep 0.3s
 echo "Welcome to the LPI-OS"
-echo "linux post installer for $(lsb_release -s -d)"
+#echo "linux post installer for $(lsb_release -s -d)"
 echo ""
 sleep 0.3s
 

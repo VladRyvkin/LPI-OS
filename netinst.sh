@@ -9,8 +9,7 @@ sleep 0.3s;
 echo "In this file we have program for work in internet"
 sleep 0.3s;
 echo ""
-echo "google-chrome-stable, google-earth-pro-stable"
-echo "skypeforlinux-64, viber, Adobe Flash Player"
+echo "google-chrome-stable, opera"
 echo ""
 sleep 0.3s;
 
@@ -36,9 +35,9 @@ while true; do
 		while true; do
 	   	 	read -p "Do you wish to install opera?" yn
 	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing google-chrome-stable...";
+       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Opera...";
 					sudo zypper install opera;
-					sleep 0.3s; echo ""; echo "Installing google-chrome-stable complete"; echo ""; break;;
+					sleep 0.3s; echo ""; echo "Opera complete"; echo ""; break;;
 				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
@@ -47,18 +46,18 @@ while true; do
 		sleep 0.3s;
 		
 		sleep 0.3s;
-		while true; do
-	   	 	read -p "Do you wish to install viber?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing viber...";
-					wget https://download.cdn.viber.com/desktop/Linux/viber.rpm;
-					sudo zypper in *.rpm;
-					rm  *.rpm;
-					sleep 0.3s; echo ""; echo "Installing viber complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+		#while true; do
+	   	 	#read -p "Do you wish to install viber?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing viber...";
+					#wget https://download.cdn.viber.com/desktop/Linux/viber.rpm;
+					#sudo zypper in *.rpm;
+					#rm  *.rpm;
+					#sleep 0.3s; echo ""; echo "Installing viber complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
 		
 		sleep 0.3s; echo ""; echo "Close netinst.sh"; echo ""; break;;
         [Nn]* ) sleep 0.3s; echo ""; echo "Close netinst.sh"; sleep 0.3s; echo ""; exit;;
