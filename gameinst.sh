@@ -47,12 +47,3 @@ while true; do
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
-
-
-
-
-#sudo zypper install PlayOnLinux
-
-#sudo zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo
-#sudo zypper refresh
-#sudo zypper install steam
