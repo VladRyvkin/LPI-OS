@@ -61,19 +61,3 @@ while true; do
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
-
-#sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome
-#sudo zypper ref
-#wget https://dl.google.com/linux/linux_signing_key.pub
-#rpm --import linux_signing_key.pub
-#sudo zypper in google-chrome-stable
-
-#sudo zypper in /home/vlad/Downloads/open_suse02/bin/google-earth-pro-stable-current.x86_64.rpm
-#sudo zypper in /home/vlad/Downloads/open_suse02/bin/skypeforlinux-64.rpm
-#sudo zypper in /home/vlad/Downloads/open_suse02/bin/viber.rpm
-
-#sudo zypper ar --check --refresh http://linuxdownload.adobe.com/linux/x86_64/ adobe
-#sudo zypper se -s -r adobe
-#sudo zypper in adobe-release-x86_64
-#rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-#sudo zypper in flash-plugin
