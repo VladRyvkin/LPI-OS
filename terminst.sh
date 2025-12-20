@@ -10,8 +10,8 @@ echo "In this file we have program for work in terminal"
 echo "and Virtualbox"
 sleep 0.3s;
 echo ""
-echo "mc, lynx, elinks, moc, htop, gcc, make, wine"
-echo "memtest86, nano, p7zip, virtualbox, teamviewer"
+echo "mc, elinks, moc, htop, wine"
+echo "memtest86, nano, p7zip, virtualbox"
 echo ""
 sleep 0.3s;
 
@@ -145,18 +145,18 @@ while true; do
 				* ) echo "Please answer yes or no.(y or n)";;
 			 	esac
 			done
-		while true; do
-	   	 	read -p "Do you wish to install teamviewer?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing teamviewer...";
-					wget https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.5693.x86_64.rpm;
-					sudo zypper in *.rpm;
-					rm  *.rpm;
-					sleep 0.3s; echo ""; echo "Installing teamviewer complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+		#while true; do
+	   	 	#read -p "Do you wish to install teamviewer?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing teamviewer...";
+					#wget https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.5693.x86_64.rpm;
+					#sudo zypper in *.rpm;
+					#rm  *.rpm;
+					#sleep 0.3s; echo ""; echo "Installing teamviewer complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
 		while true; do
 	   	 	read -p "Do you wish to install gnome-system-monitor?" yn
 	   	 	case $yn in
