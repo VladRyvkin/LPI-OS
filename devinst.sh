@@ -51,6 +51,7 @@ while true; do
 	   	 	case $yn in
        		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing Android Studio";
 					sudo zypper addrepo https://download.opensuse.org/repositories/home:ecsos/openSUSE_Tumbleweed/home:ecsos.repo;
+					#sudo zypper addrepo https://download.opensuse.org/repositories/home:ecsos/15.6/home:ecsos.repo; #for openSUSE Leap 15.6
 					sudo zypper refresh --gpg-auto-import-keys;
 					sudo zypper install android-studio;
 					sleep 0.3s; echo ""; echo "Installing Android Studio complete"; echo ""; break;;
