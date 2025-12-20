@@ -174,16 +174,3 @@ done
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
-
-#sudo zypper install mc
-#sudo zypper install lynx
-#sudo zypper install elinks
-#sudo zypper install moc
-#sudo zypper install htop
-#sudo zypper install gcc
-#sudo zypper install make
-#sudo zypper install wine
-#sudo zypper install memtest86
-#sudo zypper install nano
-#sudo zypper install p7zip
-#sudo zypper install virtualbox
