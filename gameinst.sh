@@ -30,17 +30,17 @@ while true; do
 		  
 		sleep 0.3s;
 		while true; do
-	   	 	read -p "Do you wish to install steam?" yn
-	   	 	case $yn in
-       		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing steam...";
-					sudo zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo;
-					sudo zypper refresh;
-					sudo zypper install steam;
-					sleep 0.3s; echo ""; echo "Installing steam complete"; echo ""; break;;
-				[Nn]* ) sleep 0.3s; echo ""; break;;
-				* ) echo "Please answer yes or no.(y or n)";;
-			 	esac
-			done
+	   	 	#read -p "Do you wish to install steam?" yn
+	   	 	#case $yn in
+       		 		#[Yy]* ) sleep 0.3s; echo ""; echo "Installing steam...";
+					#sudo zypper addrepo https://download.opensuse.org/repositories/games:tools/openSUSE_Tumbleweed/games:tools.repo;
+					#sudo zypper refresh;
+					#sudo zypper install steam;
+					#sleep 0.3s; echo ""; echo "Installing steam complete"; echo ""; break;;
+				#[Nn]* ) sleep 0.3s; echo ""; break;;
+				#* ) echo "Please answer yes or no.(y or n)";;
+			 	#esac
+			#done
 		
 		sleep 0.3s; echo ""; echo "Close gameinst.sh"; echo ""; break;;
         [Nn]* ) sleep 0.3s; echo ""; echo "Close gameinst.sh"; sleep 0.3s; echo ""; exit;;
