@@ -21,12 +21,9 @@ while true; do
 	   	 	read -p "Do you wish to install google-chrome-stable?" yn
 	   	 	case $yn in
        		 		[Yy]* ) sleep 0.3s; echo ""; echo "Installing google-chrome-stable...";
-					sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome;
-					sudo zypper ref;
-					wget https://dl.google.com/linux/linux_signing_key.pub;
-					rpm --import linux_signing_key.pub;
-					sudo zypper in google-chrome-stable;
-					rm *.pub;
+					sudo zypper addrepo http://dl.google.com/linux/chrome/rpm/stable/x86_64 google-chrome
+					sudo rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
+					sudo zypper install google-chrome-stable
 					sleep 0.3s; echo ""; echo "Installing google-chrome-stable complete"; echo ""; break;;
 				[Nn]* ) sleep 0.3s; echo ""; break;;
 				* ) echo "Please answer yes or no.(y or n)";;
