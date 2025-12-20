@@ -19,6 +19,3 @@ while true; do
         * ) echo "Please answer yes or no.(y or n)";;
     esac
 done
-
-#sudo zypper up  
-#reboot
